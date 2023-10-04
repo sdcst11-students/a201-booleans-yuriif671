@@ -11,3 +11,6 @@
 # Outputs:
 # "the number is even"
 # "the number is odd"
+a = float(input("Gimme a number: "))
+
+print("even") if a % 2 == 0 else print("odd")

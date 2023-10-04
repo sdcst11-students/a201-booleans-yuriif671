@@ -33,3 +33,20 @@ that is an obtuse triangle
 
 
 """
+#this doesn't work
+
+a = float(input("Enter one side: "))
+b = float(input("Enter the second side: "))
+c = float(input("Enter the third side: "))
+
+int_num = [a, b, c]
+a, b, c = sorted(int_num)
+
+c = round(c)
+
+if a**2 + b**2 == c**2:
+    print("This is a right triangle")
+if a**2 + b**2 > c**2:
+    print("This is an acute triangle")
+if a**2 + b**2 < c**2:
+    print("This is an obtuse triangle")

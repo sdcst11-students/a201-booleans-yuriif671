@@ -10,3 +10,8 @@
 # Outputs:
 # "the number is an integer"
 # "the number is not an integer"
+
+###problem
+a = input("Gimme a number: ")
+
+print("Integer") if a.isdigit() else print("Nuh-uh")

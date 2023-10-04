@@ -29,3 +29,15 @@ Enter c: 8
 the equation can not be factored
 
 """
+#this doesn't work
+import math
+
+a = int(input("Enter a: "))
+b = int(input("Enter b: "))
+c = int(input("Enter c: "))
+
+n = pow(b, 2) - (4 * a * c)
+if n == math.isqrt(-n) ** 2:
+    print("The equation can be factored")
+else:
+    print("The equation cannot be factored")
